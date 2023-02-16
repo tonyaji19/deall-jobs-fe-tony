@@ -49,7 +49,7 @@ const Carts = () => {
       selector: (row) =>
         "$ " + new Intl.NumberFormat("en-US").format(row.discountedTotal),
       width: "10%",
-      center: true,
+
       sortable: true,
       style: {
         color: "green",
