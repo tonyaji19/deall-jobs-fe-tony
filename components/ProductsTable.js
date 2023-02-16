@@ -117,10 +117,6 @@ const ProductsTable = () => {
     },
   };
 
-  const showDetail = (row) => {
-    router.push(`/cart/${row.id}`);
-  };
-
   return (
     <DataTable
       columns={columns}
@@ -133,10 +129,6 @@ const ProductsTable = () => {
       paginationComponentOptions={paginationComponentOptions}
       responsive={true}
       customStyles={tableCustomStyles}
-      onRowClicked={(row, ev) => {
-        ev.preventDefault();
-        showDetail(row);
-      }}
       subHeader
       subHeaderComponent={
         <>
